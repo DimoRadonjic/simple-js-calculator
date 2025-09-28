@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.calculator-container {
+  max-width: fit-content;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  color: red;
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calculator-keys {
+  display: flex;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  place-content: space-between;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #007bff, #00a8ff);
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  transition: transform 0.1s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.numbers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  font-size: 32px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: right;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+button.active {
+  transform: scale(0.9);
+  background: linear-gradient(135deg, #0056b3, #0097e6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) inset;
+}

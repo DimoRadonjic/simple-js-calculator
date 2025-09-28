@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JS Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Calculator</h1>
+      <div class="calculator-container">
+        <div class="calculator">
+          <input type="text" class="calculator-screen" value="" disabled />
+          <div class="calculator-keys">
+            <div class="numbers">
+              <div class="row">
+                <button type="button" value="1" data-key="1">1</button>
+                <button type="button" value="2" data-key="2">2</button>
+                <button type="button" value="3" data-key="3">3</button>
+              </div>
+              <div class="row">
+                <button type="button" value="4" data-key="4">4</button>
+                <button type="button" value="5" data-key="5">5</button>
+                <button type="button" value="6" data-key="6">6</button>
+              </div>
+              <div class="row">
+                <button type="button" value="7" data-key="7">7</button>
+                <button type="button" value="8" data-key="8">8</button>
+                <button type="button" value="9" data-key="9">9</button>
+              </div>
+              <div class="row">
+                <button type="button" class="decimal" value="." data-key=".">
+                  .
+                </button>
+
+                <button type="button" value="0" data-key="0">0</button>
+                <button
+                  type="button"
+                  class="clear"
+                  value="all-clear"
+                  data-key="Escape"
+                >
+                  AC
+                </button>
+              </div>
+              <button
+                type="button"
+                class="equal-sign"
+                value="="
+                data-key="Enter"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <div class="actions">
+              <button
+                type="button"
+                class="operator"
+                value="back"
+                data-key="Backspace"
+              >
+                Back
+              </button>
+              <button type="button" class="operator" value="*" data-key="*">
+                &times;
+              </button>
+              <button type="button" class="operator" value="/" data-key="/">
+                &divide;
+              </button>
+              <button type="button" class="operator" value="+" data-key="+">
+                +
+              </button>
+              <button type="button" class="operator" value="-" data-key="-">
+                -
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="message"></p>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
